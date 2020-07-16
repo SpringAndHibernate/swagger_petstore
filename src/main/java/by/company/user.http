@@ -1,0 +1,64 @@
+POST http://localhost:8080/user/createWithList
+Content-Type: application/json
+
+  {
+    "id": 6,
+    "username": "alex",
+    "firstName": "first",
+    "lastName": "last",
+    "email": "google",
+    "password": "qwerty",
+    "phone": "22"
+  }
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": 7,
+  "username": "vlad",
+  "firstName": "name",
+  "lastName": "fam",
+  "email": "yandex",
+  "password": "asdfg",
+  "phone": "16"
+}
+
+###
+
+GET http://localhost:8080/user/alex
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/user/login?name=vlad&password=asdfg
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/user/logout
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8080/user/igor
+Content-Type: application/json
+
+{
+  "id": 777,
+  "username": "victor",
+  "firstName": "fn",
+  "lastName": "ln",
+  "email": "@mail.ru",
+  "password": "password",
+  "phone": "12345"
+}
+
+###
+
+DELETE http://localhost:8080/user/igor
+Content-Type: application/json
+
+###
